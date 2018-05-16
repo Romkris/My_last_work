@@ -3,12 +3,13 @@
 
 	&-btnFemale {
 		position: absolute;
-  		z-index: -1;
+  		z-index: 200;
   		opacity: 0;
   		margin: 10px 0 0 7px;
 
-  	&:checked {
-  		z-index: 400;
+  	&:checked ~  .RadioSex-iconBoy{
+  		z-index: 100;
+  		display: none;
 	}
 		
 	&--btnMale {
@@ -106,6 +107,6 @@
 	.RadioSex-btnFemale:checked + .RadioSex--iconGirl:after {
 		background: linear-gradient(#ee831b 20%, #ff9a12 50%, #ffab04 80%);
   		opacity: 1;
-  		 z-index: 5;
+  		
 	}
 	
